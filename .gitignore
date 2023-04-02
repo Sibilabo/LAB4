@@ -1,0 +1,7 @@
+#ignorowane będą wszystkie pliki z rozszerzeniem .log
+
+*.log
+
+#ignorowane będą wszystkie pliki, które zawierają w nazwie "log" i mają rozszerzenie .txt
+
+log?.txt
