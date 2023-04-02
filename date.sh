@@ -1,4 +1,6 @@
 #!/bin/bash
 
 #skrypt wyświetlający bieżącą datę
-date
+if [ "$1" = "--date" ]; then
+  date
+fi
