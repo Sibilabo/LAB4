@@ -1,0 +1,3 @@
+#ignorowane będą wszystkie pliki z rozszerzeniem .log
+
+*.log
