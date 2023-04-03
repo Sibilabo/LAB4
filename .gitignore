@@ -2,6 +2,7 @@
 
 *.log
 
-#ignorowane będą wszystkie pliki, które zawierają w nazwie "log" i mają rozszerzenie .txt
+#ignorowane będą wszystkie pliki, które zawierają w nazwie "log" lub error i mają rozszerzenie .txt
 
 log?.txt
+error?.txt
