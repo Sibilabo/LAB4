@@ -1,0 +1,14 @@
+newbranch-1
+	-Wyświetla datę po podaniu flagi --date
+newbranch-2
+	-Tworzy plik .gitignore, który ignoruje pliki zawierające frazę "log"
+newbranch-3
+	-Dodaje do głównego skryptu polecenia tworzące 100 plików przy podaniu flagi --logs
+newbranch-4
+	-Dodaje do głównego skryptu fragment, który po dodaniu flagi --logs 30 tworzy 30 plików
+
+newbranch-5
+	-Dodaje do głównego skryptu fragment, który po wywołaniu skryptu z flagą --help wyświetla dotępne opcje po wpisaniu polecenia "git"
+newbranch-6
+	-Dodaje skrócone wersje flag: --date=-d; --logs=-l; --help=-h
+
