@@ -6,7 +6,6 @@ newbranch-3
 	-Dodaje do głównego skryptu polecenia tworzące 100 plików przy podaniu flagi --logs
 newbranch-4
 	-Dodaje do głównego skryptu fragment, który po dodaniu flagi --logs 30 tworzy 30 plików
-
 newbranch-5
 	-Dodaje do głównego skryptu fragment, który po wywołaniu skryptu z flagą --help wyświetla dotępne opcje po wpisaniu polecenia "git"
 newbranch-6
@@ -19,3 +18,6 @@ newbranch-9
 	-Dopisanie fragmentu skryptu, który tworzy 100 plików tym razem każdy w osobnym folderze. Zawartość plików taka sama jak w poprzendnim zadaniu. Flagi wywołujące skrypt --logs, -l
 newbranch-10
 	-Tworzy 30 plików w 30 folderach
+newbranch-11
+	-Tworzy w zależności od flagi 100 lub 30 folderów i plików, przy fladze --error stworzy 100 folderów i plików, w przypadku flagi -e stworzy podaną ilość plików i folderów
+
