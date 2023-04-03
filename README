@@ -13,4 +13,6 @@ newbranch-6
 	-Dodaje skrócone wersje flag: --date=-d; --logs=-l; --help=-h
 newbranch-7 
 	-Dodaje do skryptu kolejną opcję flagi "--pomoc", plik nie jest mergowany z główną gałęzią "main"
+newbranch-8
+	-Po dodaniu do skryptu flagi "--init" klonuje repozytorium i zmienia zmienną $PATH
 
