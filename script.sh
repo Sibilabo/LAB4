@@ -38,6 +38,6 @@ fi
 
 pomoc=$(git --help)
 
-if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
+if [ "$1" = "--help" ] || [ "$1" = "-h" ] || [ "$1" = "--pomoc" ]; then
   echo $pomoc
 fi
