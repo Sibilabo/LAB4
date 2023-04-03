@@ -41,3 +41,9 @@ pomoc=$(git --help)
 if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
   echo $pomoc
 fi
+
+
+if [[ "$1" == "--init" ]]; then
+    git clone https://github.com/Sibilabo/LAB4
+    echo 'export PATH=$PATH:'$(pwd) >> ~/.bashrc
+fi
