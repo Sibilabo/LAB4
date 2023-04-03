@@ -41,3 +41,15 @@ pomoc=$(git --help)
 if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
   echo $pomoc
 fi
+
+if [ "$1" = "--logs" ]; then
+  if [ "$2" -gt 0 ] 2>/dev/null; then
+    for ((i=1; i<=$2; i++)); do
+      mkdir log$i
+      touch log$i.txt
+      echo $data > log$i/log$i.txt
+      echo log$i.txt >> log$i/log$i.txt
+      echo $nazwa_skryptu >> log$i/log$i.txt
+    done
+  fi
+fi
