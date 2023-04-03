@@ -15,4 +15,5 @@ newbranch-7
 	-Dodaje do skryptu kolejną opcję flagi "--pomoc", plik nie jest mergowany z główną gałęzią "main"
 newbranch-8
 	-Po dodaniu do skryptu flagi "--init" klonuje repozytorium i zmienia zmienną $PATH
-
+newbranch-9
+	- Dopisanie fragmentu skryptu, który tworzy 100 plików tym razem każdy w osobnym folderze. Zawartość plików taka sama jak w poprzendnim zadaniu. Flagi wywołujące skrypt --logs, -l
