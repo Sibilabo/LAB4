@@ -11,4 +11,6 @@ newbranch-5
 	-Dodaje do głównego skryptu fragment, który po wywołaniu skryptu z flagą --help wyświetla dotępne opcje po wpisaniu polecenia "git"
 newbranch-6
 	-Dodaje skrócone wersje flag: --date=-d; --logs=-l; --help=-h
+newbranch-7 
+	-Dodaje do skryptu kolejną opcję flagi "--pomoc", plik nie jest mergowany z główną gałęzią "main"
 
