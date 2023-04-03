@@ -47,3 +47,27 @@ if [[ "$1" == "--init" ]]; then
     git clone https://github.com/Sibilabo/LAB4
     echo 'export PATH=$PATH:'$(pwd) >> ~/.bashrc
 fi
+
+
+#skrypt tworzy 100 folderów i plików przy podaniu flagi --error, a przy podaniu flagi -e 30 stworzy 30 takich zestawów
+
+
+if [ "$1" == "--error" ]; then
+  for i in {1..100}; do
+  mkdir error$i
+  touch error$i/error$i.txt;
+  echo $data >> error$i/error$i.txt
+  echo "Nazwa pliku:" error$i.txt >> error$i/error$i.txt
+  echo "Nazwa skryptu:" $nazwa_skryptu >> error$i/error$i.txt
+  done
+else
+  if [ "$1" = "-e" ] || [ "$2" = -gt 0 ]; then
+    for ((i=1; i<=$2; i++)); do
+      mkdir error$i
+      touch error$i/error$i.txt
+      echo $data >> error$i/error$i.txt
+      echo log$i.txt >> error$i/error$i.txt
+      echo $nazwa_skryptu >> error$i/error$i.txt
+    done
+  fi
+fi
