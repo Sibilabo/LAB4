@@ -33,3 +33,11 @@ if [ "$1" = "--logs" ]; then
     done
   fi
 fi
+
+#skrypt, który wyświetla wszystkie dostępne opcje do komendy git
+
+pomoc=$(git --help)
+
+if [ "$1" = "--help" ]; then
+  echo $pomoc
+fi
