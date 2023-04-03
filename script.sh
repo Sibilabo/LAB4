@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #skrypt wyświetlający bieżącą datę
-if [ "$1" = "--date" ]; then
+if [ "$1" = "--date" ] || [ "$1" = "-d"; then
   date
 fi
 
@@ -9,7 +9,7 @@ fi
 
 nazwa_skryptu=$(basename "$0")
 data=$(date)
-if [ "$1" == "--logs" ]; then
+if [ "$1" == "--logs" ] || [ "$1" = "-l" ]; then
   for i in {1..100}; do
   touch log$i.txt;
   echo $data > log$i.txt
@@ -38,6 +38,6 @@ fi
 
 pomoc=$(git --help)
 
-if [ "$1" = "--help" ]; then
+if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
   echo $pomoc
 fi
