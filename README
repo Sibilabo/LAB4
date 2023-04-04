@@ -22,4 +22,5 @@ newbranch-11
 	-Tworzy w zależności od flagi 100 lub 30 folderów i plików, przy fladze --error stworzy 100 folderów i plików, w przypadku flagi -e stworzy podaną ilość plików i folderów
 newbranch-12
 	-Modyfikuje .gitignore tak, żeby ignorował pliki zawierające w nazwie error
-
+newbranch-13
+	-Modyfikacje w części help
