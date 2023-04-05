@@ -56,7 +56,7 @@ fi
 #skrypt tworzy 100 folderów i plików przy podaniu flagi --error, a przy podaniu flagi -e 30 stworzy 30 takich zestawów
 
 
-if [ "$1" == "--error" ]; then
+if [ "$1" = "--error" ] || [ "$1" = "-e" ]; then
   for i in {1..100}; do
   mkdir error$i
   touch error$i/error$i.txt;
@@ -64,8 +64,7 @@ if [ "$1" == "--error" ]; then
   echo "Nazwa pliku:" error$i.txt >> error$i/error$i.txt
   echo "Nazwa skryptu:" $nazwa_skryptu >> error$i/error$i.txt
   done
-else
-  if [ "$1" = "-e" ] || [ "$2" = -gt 0 ]; then
+elif [ "$2" = -gt 0 ] 2>/dev/null; then
     for ((i=1; i<=$2; i++)); do
       mkdir error$i
       touch error$i/error$i.txt
